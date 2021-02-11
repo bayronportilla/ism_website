@@ -224,7 +224,7 @@
                         <div class="feature">
                            
                             <div class="feature-content">
-								<img src = "images/logos/comet.png" alt = "saturn" />
+								<img src = "images/logos/instrumentation.png" alt = "saturn" width="81" height="81" class="img-rounded" />
                                 <h4>Receivers</h4>
                                 <p>Bolometers and Heterodyne receivers with the collaboration of SRON</p>
                             </div>
@@ -360,7 +360,7 @@
             </div>
             <div class="row">
                 <div class="latest-news">
-					<?php get_papers(True, 3); ?>
+					<?php get_papers(True, 6); ?>
                 </div>
             </div>
         </div>
@@ -407,7 +407,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-xs-12">
-                        <span class="copyright">Copyright &copy; <a href="http://guardiantheme.com">Kapteyn ISM</a> 2017</span>
+                        <span class="copyright">Copyright &copy; <a href="http://guardiantheme.com">Kapteyn ISM Group</a> 2020</span>
                     </div>
                     <div class="col-md-4 col-xs-12">
                 </div>
