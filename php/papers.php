@@ -187,37 +187,48 @@
 		}
 		
 		//Get data from arXiv
+		include_once('autoloader.php');
+
+		define ('EOL', "<br />\n");
+		
 		$url = get_quiery($num);
-		$response = file_get_contents($url);
-		//convert response into xml so it's easier to deal with
-		$arxiv = new SimpleXMLElement($response);
-		//get number of entries (things can go wrong so worth checking)
-		$len = sizeof($arxiv->entry);
-		
+		$feed = new SimplePie();
+		$feed->set_feed_url($url);
+		$feed->enable_order_by_date(false);
+		$feed->init();
+		$feed->handle_content_type();
+
+		# Use these namespaces to retrieve tags
+		$atom_ns = 'http://www.w3.org/2005/Atom';
+		$opensearch_ns = 'http://a9.com/-/spec/opensearch/1.1/';
+		$arxiv_ns = 'http://arxiv.org/schemas/atom';
+
+		# print out feed information
+		$last_updated = $feed->get_feed_tags($atom_ns,'updated');
 		echo "\n";
-		
+
 		$tab = "\t\t\t\t\t";
-		
-		for($i = 0; $i < $len; $i++)
-		{
+		foreach ($feed->get_items() as $entry) {
+
+			# split the id line to get just the arxiv id
+			$temp = explode('/abs/',$entry->get_id());
 			echo $tab."<div class=\"col-md-12\">\n";
 			echo $tab."\t<div class=\"latest-post\">\n";
-			echo $tab."\t\t<img src=\"images/about-0";
-			echo $i+1;
-			echo ".jpg\" class=\"img-responsive\" alt=\"\">\n";
+			echo $tab."\t<img src=\"images/Arxiv";
+			echo ".png\" class=\"img-responsive\" alt=\"\">\n";
 			
 			//title
-			echo $tab."\t\t<h4><a href=";
-            echo $arxiv->entry[$i]->id;
+			echo $tab."\t<h4><a href=";
+            echo $entry->get_id();
             echo " target=\"_blank\">";
-			echo $arxiv->entry[$i]->title;
+			echo $entry->get_title();
 			echo "</a></h4>\n";
 			
 			//date
 			echo $tab."\t\t<div class=\"post-details\">\n";
 			echo $tab."\t\t\t<span class=\"date\"><strong>";
-			$date = $arxiv->entry[$i]->updated;
-			$date = (string)$date;
+			$date = $entry->get_item_tags($atom_ns,'updated');
+			$date = (string)$date[0]['data'];
 			//echo $date;
 			$year = substr($date, 0, 4);
 			$month = substr($date, 5, 2);
@@ -229,21 +240,25 @@
 			echo $year;
 			echo "</span>\n";
 			echo $tab."\t\t</div>\n";
-			
+
 			//summary
 			echo $tab."\t\t<p>";
-			$summary = $arxiv->entry[$i]->summary;
-			echo substr($summary, 0, 297);
+			$summary = $entry->get_item_tags($atom_ns,'summary');
+			echo substr((string)$summary[0]['data'], 0, 297);
 			echo "...</p>\n";
-			
-			//link
-			echo $tab."\t\t<a href=";
-			echo $arxiv->entry[$i]->id;
-			echo " target=\"_blank\" class=\"btn btn-primary\">Read More</a>\n";
+
+			# gather a list of authors
+			$authors = array();
+			foreach ($entry->get_authors() as $author) {
+				array_push($authors,$author->get_name());
+			}
+			$author_string = join(', ',$authors);
 			
 			echo $tab."\t</div>\n";
 			echo $tab."</div>\n";
 		}
+
+		
 	}
 	
 ?>

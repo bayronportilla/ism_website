@@ -353,7 +353,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title text-center">
-                        <h3>Latest Publications</h3>
+                        <h3>Latest Publications in ArXiv</h3>
                         <p>The papers which have been published by ISM Group Members</p>
                     </div>
                 </div>
@@ -407,7 +407,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-xs-12">
-                        <span class="copyright">Copyright &copy; <a href="http://guardiantheme.com">Kapteyn ISM Group</a> 2020</span>
+                        <span class="copyright">Copyright &copy; <a href="http://guardiantheme.com">Kapteyn ISM Group</a> 2021</span>
                     </div>
                     <div class="col-md-4 col-xs-12">
                 </div>
