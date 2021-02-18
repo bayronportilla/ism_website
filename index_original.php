@@ -283,7 +283,7 @@
                 
                 <div class="col-md-4">
                     <div class="welcome-section text-center">
-                        <img src="images/team/img1.jpg" class="img-responsive" alt="..">
+                        <img src="images/team/floris.jpg" class="img-responsive" alt="..">
                         <h4>Prof. Dr. Floris F.S. van der Tak</h4>
                         <div class="border"></div>
                         <p> <a href="mailto:">Email</a> / <a href="https://personal.sron.nl/~vdtak/">Personal Website</a> </p>
@@ -292,7 +292,7 @@
                 
                 <div class="col-md-4">
                     <div class="welcome-section text-center">
-                        <img src="images/team/img1.jpg" class="img-responsive" alt="..">
+                        <img src="images/team/floris.jpg" class="img-responsive" alt="..">
                         <h4>Prof. Dr. Inga Kamp</h4>
                         <div class="border"></div>
                         <p> <a href="mailto:">Email</a> / <a href="https://www.astro.rug.nl/~kamp/">Personal Website</a> </p>
@@ -302,7 +302,7 @@
 
                 <div class="col-md-4">
                     <div class="welcome-section text-center">
-                        <img src="images/team/img1.jpg" class="img-responsive" alt="..">
+                        <img src="images/team/floris.jpg" class="img-responsive" alt="..">
                         <h4>Dr. Russell Shipman</h4>
                         <div class="border"></div>
                         <p> <a href="mailto:">Email</a> / <a href="https://www.researchgate.net/profile/Russell_Shipman">Personal Website</a> </p>
