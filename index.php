@@ -293,20 +293,6 @@
                     </div>
                 </div>
                 
-                <div class="col-md-4">
-                    <div class="welcome-section text-center">
-                        <img src="images/team/safari_spica.jpg" class="img-responsive" alt="..">
-                        <h4>SAFARI/SPICA Project</h4>
-                        <div class="border"></div>
-                        <p> SPICA is a joint European-Japanese project under phase-A study at ESA: an infrared space
-                            observatory with a large, cryogenically cooled telescope. One of the instruments on board
-                            is SAFARI, a far-IR spectrometer providing instantaneously wavelength coverage of the 34
-                            to 230 micron domain. One of the core objectives of this mission is to trace the gas, dust and
-                            ice evolution in planetary systems. </p>
-                        <p> <a href="https://www.sron.nl/missions-astrophysics/spica-safari">Project Website</a> </p>
-                    </div>
-                </div>
-                
 
                 <div class="col-md-4">
                     <div class="welcome-section text-center">
@@ -327,7 +313,7 @@
 
 		<div class="col-md-4">
                     <div class="welcome-section text-center">
-                        <img src="http://www.olife-programme.eu/wp-content/uploads/2019/03/olife-logo-retina.png" class="img-responsive" alt="..">
+                        <img src="images/team/olife-logo-retina.jpg" class="img-responsive" alt="..">
                         <h4>oLife</h4>
                         <div class="border"></div>
                         <p> A joint initiative by seven world-leading research institutes of three universities in 
@@ -374,7 +360,8 @@
                 <div class="col-lg-12">
                     <div class="section-title text-center">
                         <h3>Contact</h3>
-                        <p>Please indicate 'Question for ISM Group' in subject of your mail</p>
+                        <p>The current coordinators of the ISM group are Andrés and Bayron. </p>
+						<p>You can contact them by email. Please indicate 'Question for ISM Group' in subject of your mail</p>
                     </div>
                 </div>
             </div>
@@ -394,8 +381,8 @@
                     <div class="footer-contact-info">
                         <h4>Mails are checked:</h4>
                         <ul>
-                            <li><strong>Mon-Wed :</strong> 01:00 PM to 14:00 pm</li>
-                            <li><strong>Thurs-Fri :</strong> 02:00 pm to 02:30 pm</li>
+                            <li><strong>Mon-Wed :</strong> 11:00 to 12:00 </li>
+                            <li><strong>Thurs-Fri :</strong> 14:00 to 14:30</li>
                             <li><strong>Sat :</strong> Closed</li>
                             <li><strong>Sunday :</strong> Closed</li>
                         </ul>

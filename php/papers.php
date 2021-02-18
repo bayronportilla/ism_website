@@ -214,8 +214,8 @@
 			$temp = explode('/abs/',$entry->get_id());
 			echo $tab."<div class=\"col-md-12\">\n";
 			echo $tab."\t<div class=\"latest-post\">\n";
-			echo $tab."\t<img src=\"images/Arxiv";
-			echo ".png\" class=\"img-responsive\" alt=\"\">\n";
+			echo $tab."\t<img src=\"images/team/ArxivAstro";
+			echo ".jpg\" class=\"img-responsive\" alt=\"\">\n";
 			
 			//title
 			echo $tab."\t<h4><a href=";
