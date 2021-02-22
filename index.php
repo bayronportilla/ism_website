@@ -360,7 +360,7 @@
                 <div class="col-lg-12">
                     <div class="section-title text-center">
                         <h3>Contact</h3>
-                        <p>The current coordinators of the ISM group are Andrés and Bayron. </p>
+                        <p>The current coordinators of the ISM group are Andres and Bayron. </p>
 						<p>You can contact them by email. Please indicate 'Question for ISM Group' in subject of your mail</p>
                     </div>
                 </div>
